@@ -124,7 +124,7 @@ __END__
               :top 50px
               :width 85px
             &.medium
-              :top 40px
+              :top 43px
               :width 106px
             &.large
               :top 27px
@@ -132,6 +132,17 @@ __END__
             &.x-large
               :top 0
               :width 171px
+          table
+            :position absolute
+            :top 220px
+            :left 50px
+            :width 300px
+            :opacity 0.6
+            thead
+              :opacity 0.8
+            tbody
+              th
+                :text-align left
         
         .details
           :z-index 1
@@ -223,20 +234,63 @@ __END__
     %img{:src => "/tee-white.png", :alt => "The Tee"}/
     %span.size XL
 
+  %table
+    %thead
+      %tr
+        %th{:scope => "row"} Measurements
+        %th{:scope => "col"} S
+        %th{:scope => "col"} M
+        %th{:scope => "col"} L
+        %th{:scope => "col"} XL
+    %tbody
+      %tr
+        %th{:scope => "row"} Body Width (cm)
+        %td 46
+        %td 51
+        %td 56
+        %td 61
+      %tr
+        %th{:scope => "row"} Body Length (cm)
+        %td 69
+        %td 74
+        %td 81
+        %td 84
+
 .gal-tee-sizes
   .small
-    %img{:src => "/tee-white.png", :alt => "The Tee"}/
+    %img{:src => "/tee-white-gal.png", :alt => "The Tee"}/
     %span.size S
   .medium
-    %img{:src => "/tee-white.png", :alt => "The Tee"}/
+    %img{:src => "/tee-white-gal.png", :alt => "The Tee"}/
     %span.size M
   .large
-    %img{:src => "/tee-white.png", :alt => "The Tee"}/
+    %img{:src => "/tee-white-gal.png", :alt => "The Tee"}/
     %span.size L
   .x-large
-    %img{:src => "/tee-white.png", :alt => "The Tee"}/
+    %img{:src => "/tee-white-gal.png", :alt => "The Tee"}/
     %span.size XL
-
+    
+  %table
+    %thead
+      %tr
+        %th{:scope => "row"} Measurements
+        %th{:scope => "col"} S
+        %th{:scope => "col"} M
+        %th{:scope => "col"} L
+        %th{:scope => "col"} XL
+    %tbody
+      %tr
+        %th{:scope => "row"} Body Width (cm)
+        %td 43
+        %td 45.5
+        %td 48
+        %td 51.75
+      %tr
+        %th{:scope => "row"} Body Length (cm)
+        %td 64
+        %td 65
+        %td 66
+        %td 67
     
 .details
   %form{:method => "post", :action => ""}
