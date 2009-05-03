@@ -10,7 +10,7 @@ $(function() {
     sex = "Gals";
     $(".tee").animate({width:"325px",height:"240px"});
     $(".guy-or-gal").find(".guy, .or, .question").animate({opacity:0}, function() {$(this).hide();});
-    $(".guy-or-gal h1.gal").animate({top:"-100px",left:"-50px"});
+    $(".guy-or-gal h1.gal").animate({top:"-100px",left:"-50px"}).unbind("click").css({cursor:"default"});
 
     $(".gal-tee-sizes").css({display:"block"}).animate({opacity:1});
     $(".gal-tee-sizes .small").animate({left:"0px"});
@@ -23,7 +23,7 @@ $(function() {
     sex = "Guys";
     $(".tee").animate({width:"325px",height:"240px"});
     $(".guy-or-gal").find(".gal, .or, .question").animate({opacity:0}, function() {$(this).hide();});
-    $(".guy-or-gal h1.guy").animate({top:"-100px",left:"-50px"});
+    $(".guy-or-gal h1.guy").animate({top:"-100px",left:"-50px"}).unbind("click").css({cursor:"default"});
 
     $(".guy-tee-sizes").css({display:"block"}).animate({opacity:1});
     $(".guy-tee-sizes .small").animate({left:"0px"});
@@ -40,6 +40,7 @@ $(function() {
     $(".details").css({display:"block"}).animate({opacity:1}, function() {
       $(".details input.name").focus();
     });
+    $(this).unbind("click").css({cursor:"default"});
   });
   
   $(".details form").submit(function(e) {
@@ -51,9 +52,9 @@ $(function() {
     tee.animate({left: finalLeft + "px"});
     tee.find("span.size").fadeOut();
     $(".pay").css({display:"block"}).animate({opacity:1});
-    $(".pay h1").text("Railscamp Tee - " + sex + " " + size);
+    $(".pay h1").text("Railscamp Tee v3 - " + sex + " " + size);
     Cufon.replace(".pay h1");
-    $(".pay form input.details").val("Railscamp tee - " + name + " - " + size + " - " + sex);
+    $(".pay form input.details").val($(".pay h1").text() + " - " + name);
     e.preventDefault();
   });
 });
