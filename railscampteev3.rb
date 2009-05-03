@@ -2,7 +2,11 @@ require 'rubygems'
 require 'sinatra'
 
 get '/' do
-  haml :home
+  if ((@days_left = Date.civil(2009,5,8) - Date.today) < 0)
+    haml :closed
+  else
+    haml :home
+  end
 end
 
 get '/thankyou' do
@@ -176,11 +180,21 @@ __END__
     :javascript
       Cufon.now();
 
+@@ closed
+
+%img.tee{:src => "/tee.gif", :alt => "Tee", :width => "434", :height => "320"}/
+
 @@ home
 
 %img.tee{:src => "/tee.gif", :alt => "Tee", :width => "434", :height => "320"}/
+
 %h1.order Order.
-%p.days only 7 days left.
+%p.days
+  - if @days_left > 0
+    == only #{@days_left + 1} days left
+  - elsif @days_left == 0
+    last day!
+    
 %p.intro
   <strong>yes oh my yes</strong>, it&rsquo;s third version of the railscamp tee, exclusive to railscampians. Order now for $20 and pick it up at Railscamp. All profits will be donated to <a href="http://www.ewb.org.au/">Engineers&nbsp;Without&nbsp;Borders Australia</a>. Do&nbsp;it.
   %br/
