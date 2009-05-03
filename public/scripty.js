@@ -46,11 +46,13 @@ $(function() {
     name = $(".details form input.name").val();
     if (!name.match(/\w+/)) return false;
     $(".details").fadeOut();
-    $(".pay h1 span.name").text(name.split(" ")[0]);
-    Cufon.replace(".pay h1");
-    $(".guy-tee-sizes div:visible, .gal-tee-sizes div:visible").animate({left:"0px"});
+    var tee = $(".guy-tee-sizes div:visible, .gal-tee-sizes div:visible");
+    var finalLeft = 180 + (-1 * (tee.find("img").width()));
+    tee.animate({left: finalLeft + "px"});
+    tee.find("span.size").fadeOut();
     $(".pay").css({display:"block"}).animate({opacity:1});
-    $(".pay h1").text("Railscamp Tee for " + name + " - " + sex + " " + size);
+    $(".pay h1").text("Railscamp Tee - " + sex + " " + size);
+    Cufon.replace(".pay h1");
     $(".pay form input.details").val("Railscamp tee - " + name + " - " + size + " - " + sex);
     e.preventDefault();
   });

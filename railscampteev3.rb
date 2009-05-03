@@ -150,7 +150,7 @@ __END__
           :z-index 1
           :position absolute
           :top 170px
-          :left 550px
+          :left 600px
           :opacity 0
           :display none
           h1
@@ -158,7 +158,7 @@ __END__
             :margin 0
             :padding 0
           form
-            :margin 20px 0 0 10px
+            :margin 20px 0 0 5px
 
         .thankyou
           :position absolute
@@ -196,30 +196,30 @@ __END__
 .guy-tee-sizes
   .small
     %img{:src => "/tee-white.png", :alt => "The Tee"}/
-    S
+    %span.size S
   .medium
     %img{:src => "/tee-white.png", :alt => "The Tee"}/
-    M
+    %span.size M
   .large
     %img{:src => "/tee-white.png", :alt => "The Tee"}/
-    L
+    %span.size L
   .x-large
     %img{:src => "/tee-white.png", :alt => "The Tee"}/
-    XL
+    %span.size XL
 
 .gal-tee-sizes
   .small
     %img{:src => "/tee-white.png", :alt => "The Tee"}/
-    S
+    %span.size S
   .medium
     %img{:src => "/tee-white.png", :alt => "The Tee"}/
-    M
+    %span.size M
   .large
     %img{:src => "/tee-white.png", :alt => "The Tee"}/
-    L
+    %span.size L
   .x-large
     %img{:src => "/tee-white.png", :alt => "The Tee"}/
-    XL
+    %span.size XL
 
     
 .details
