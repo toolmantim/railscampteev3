@@ -2,7 +2,7 @@ $(function() {
   var sex, size, name;
 
   $("h1.order").click(function() {
-    $("p.days, p.intro, h1.order").fadeOut(300);
+    $("p.days, .intro, h1.order").fadeOut(300);
     $(".guy-or-gal").animate({bottom:"-150px"}, 500);
   });
   
