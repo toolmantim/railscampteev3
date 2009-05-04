@@ -223,9 +223,12 @@ __END__
 .intro
   %p
     <strong>yes oh my yes</strong>, it&rsquo;s the third version of the <a
-    href="http://railscamps.com/">railscamp tee</a>, exclusive to <a
+    href="http://railscamptee.com/">rails camp tee</a>, exclusive to <a
     href="http://railscamps.com/#au_may_2009">gold coast railscampians</a>.
     Order now for $20 and pick it up at Railscamp.
+  %p
+    Not going to rails camp but know someone who is? Order a tee and get them
+    to pick it up for you.
   %p
     All profits (~ $8 per tee) go to <a
     href="http://www.ewb.org.au/">Engineers&nbsp;Without&nbsp;Borders
