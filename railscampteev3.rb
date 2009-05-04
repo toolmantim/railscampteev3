@@ -333,6 +333,8 @@ __END__
 
 .thankyou
   %h1 Rockn!
-  %p See you at Railscamp, tee in hand.
+  %p I (Tim Lucas) will see you at Railscamp, tee in hand.
   %p
-    %a{:href => "/"} Grab another one?
+    Feel free to
+    %a{:href => "/"} grab a couple for your friends
+    too!
