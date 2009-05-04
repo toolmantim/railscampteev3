@@ -22,6 +22,13 @@ __END__
 %html
   %head
     %title Rails camp tee v3
+    %script{:src => "/jquery.js", :type => "text/javascript"}
+    %script{:src => "/cufon.js", :type => "text/javascript"}
+    %script{:src => "/fontin.font.js", :type => "text/javascript"}
+    %script{:src => "/scripty.js", :type => "text/javascript"}
+    :javascript
+      Cufon.replace("h1, p.days, .guy-or-gal, h1.name, p.description, .thankyou h1");
+    
     %style{:type => "text/css", :media => "all"}
       :sass
         html, body, div, h1, h2, p
@@ -182,16 +189,10 @@ __END__
             :margin-top 10px
   %body
     = yield
-    %script{:src => "/jquery.js", :type => "text/javascript"}
-    %script{:src => "/cufon.js", :type => "text/javascript"}
-    %script{:src => "/fontin.font.js", :type => "text/javascript"}
-    %script{:src => "/scripty.js", :type => "text/javascript"}
     
     :javascript
-      Cufon.replace("h1, p.days, .guy-or-gal, h1.name, p.description, .thankyou h1");
       Cufon.now();
 
-    :javascript
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
       document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
 
