@@ -145,6 +145,8 @@ __END__
             tbody
               th
                 :text-align left
+              td
+                :text-align center
         
         .details
           :z-index 1
