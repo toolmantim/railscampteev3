@@ -68,13 +68,15 @@ __END__
           :font-size 24px
           :text-transform lowercase
           :color red
-        p.intro
+        .intro
           :position absolute
           :top 350px
           :left 500px
           :font-size 14px
-          :width 450px
+          :width 460px
           :line-height 1.5em
+          p
+            :margin-bottom 10px
           
         .guy-or-gal
           :z-index 3
@@ -218,11 +220,19 @@ __END__
   - elsif @days_left == 0
     last day!
     
-%p.intro
-  <strong>yes oh my yes</strong>, it&rsquo;s third version of the <a href="http://railscamps.com/">railscamp tee</a>, exclusive to <a href="http://railscamps.com/#au_may_2009">gold coast railscampians</a>. Order now for $20 and pick it up at Railscamp. All profits will be donated to <a href="http://www.ewb.org.au/">Engineers&nbsp;Without&nbsp;Borders Australia</a>. Do&nbsp;it.
-  %br/
-  %br/
-  \\m/ to <a href="http://hellotherecanary.com/">Carla Hackett</a> for yet another rad design, and Nathan Wong from bestylin for the tee printing.
+.intro
+  %p
+    <strong>yes oh my yes</strong>, it&rsquo;s the third version of the <a
+    href="http://railscamps.com/">railscamp tee</a>, exclusive to <a
+    href="http://railscamps.com/#au_may_2009">gold coast railscampians</a>.
+    Order now for $20 and pick it up at Railscamp.
+  %p
+    All profits (~ $8 per tee) go to <a
+    href="http://www.ewb.org.au/">Engineers&nbsp;Without&nbsp;Borders
+    Australia</a>.
+  %p
+    \\m/ to <a href="http://hellotherecanary.com/">Carla Hackett</a> for yet
+    another rad design, and Nathan Wong from bestylin for the tee printing.
 
 .guy-or-gal
   %h1.gal gals
