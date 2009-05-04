@@ -222,7 +222,7 @@ __END__
   <strong>yes oh my yes</strong>, it&rsquo;s third version of the <a href="http://railscamps.com/">railscamp tee</a>, exclusive to <a href="http://railscamps.com/#au_may_2009">gold coast railscampians</a>. Order now for $20 and pick it up at Railscamp. All profits will be donated to <a href="http://www.ewb.org.au/">Engineers&nbsp;Without&nbsp;Borders Australia</a>. Do&nbsp;it.
   %br/
   %br/
-  \\m/ to <a href="http://hellotherecanary.com/">Carla Hackett</a> for yet another rad design, and Nathan Wong from bestylin for handling the printing.
+  \\m/ to <a href="http://hellotherecanary.com/">Carla Hackett</a> for yet another rad design, and Nathan Wong from bestylin for the tee printing.
 
 .guy-or-gal
   %h1.gal gals
