@@ -20,6 +20,7 @@ __END__
 @@ layout
 !!! Strict
 %html
+  / Cufon, Sinatra and Heroku FTW!
   %head
     %title Rails camp tee v3
     %script{:src => "/jquery.js", :type => "text/javascript"}
@@ -221,7 +222,7 @@ __END__
   <strong>yes oh my yes</strong>, it&rsquo;s third version of the railscamp tee, exclusive to railscampians. Order now for $20 and pick it up at Railscamp. All profits will be donated to <a href="http://www.ewb.org.au/">Engineers&nbsp;Without&nbsp;Borders Australia</a>. Do&nbsp;it.
   %br/
   %br/
-  \\m/ to <a href="http://hellotherecanary.com/">Carla Hackett</a> for yet another rad design.
+  \\m/ to <a href="http://hellotherecanary.com/">Carla Hackett</a> for yet another rad design, and Nathan Wong from bestylin for handling the printing.
 
 .guy-or-gal
   %h1.gal gals
