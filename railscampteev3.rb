@@ -73,7 +73,7 @@ __END__
           :top 350px
           :left 500px
           :font-size 14px
-          :width 420px
+          :width 450px
           :line-height 1.5em
           
         .guy-or-gal
@@ -219,7 +219,7 @@ __END__
     last day!
     
 %p.intro
-  <strong>yes oh my yes</strong>, it&rsquo;s third version of the railscamp tee, exclusive to railscampians. Order now for $20 and pick it up at Railscamp. All profits will be donated to <a href="http://www.ewb.org.au/">Engineers&nbsp;Without&nbsp;Borders Australia</a>. Do&nbsp;it.
+  <strong>yes oh my yes</strong>, it&rsquo;s third version of the <a href="http://railscamps.com/">railscamp tee</a>, exclusive to <a href="http://railscamps.com/#au_may_2009">gold coast railscampians</a>. Order now for $20 and pick it up at Railscamp. All profits will be donated to <a href="http://www.ewb.org.au/">Engineers&nbsp;Without&nbsp;Borders Australia</a>. Do&nbsp;it.
   %br/
   %br/
   \\m/ to <a href="http://hellotherecanary.com/">Carla Hackett</a> for yet another rad design, and Nathan Wong from bestylin for handling the printing.
@@ -255,16 +255,16 @@ __END__
     %tbody
       %tr
         %th{:scope => "row"} Body Width (cm)
-        %td 46
-        %td 51
-        %td 56
-        %td 61
+        %td 45
+        %td 49
+        %td 53
+        %td 57
       %tr
         %th{:scope => "row"} Body Length (cm)
-        %td 69
-        %td 74
-        %td 81
-        %td 84
+        %td 70
+        %td 73
+        %td 75
+        %td 78
 
 .gal-tee-sizes
   .small
@@ -297,10 +297,10 @@ __END__
         %td 51.75
       %tr
         %th{:scope => "row"} Body Length (cm)
-        %td 64
-        %td 65
         %td 66
         %td 67
+        %td 68
+        %td 69
     
 .details
   %form{:method => "post", :action => ""}
