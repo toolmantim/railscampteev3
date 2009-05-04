@@ -179,12 +179,12 @@ __END__
 
         .thankyou
           :position absolute
-          :top 100px
+          :top 200px
           :left 500px
           h1
             :font-size 92px
             :position absolute
-            :top 0
+            :top -100px
             :left 0
           p
             :margin-top 10px
