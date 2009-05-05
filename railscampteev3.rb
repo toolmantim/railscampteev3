@@ -54,6 +54,7 @@ __END__
           :top 100px
           :left 0
         h1.order
+          :color red
           :z-index 4
           :position absolute
           :top 150px
