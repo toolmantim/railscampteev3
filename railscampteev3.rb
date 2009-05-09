@@ -193,6 +193,15 @@ __END__
             :left 0
           p
             :margin-top 10px
+        
+        .closed
+          :position absolute
+          :top 100px
+          :left 500px
+          h1
+            :font-size 3.2em
+          p
+            :margin-top 20px
   %body
     = yield
     
@@ -211,6 +220,15 @@ __END__
 @@ closed
 
 %img.tee{:src => "/tee.gif", :alt => "Tee", :width => "434", :height => "320"}/
+
+.closed
+  %h1 All done.
+  %p
+    <strong>sorry oh my sorry</strong>, if you haven&rsquo;t ordered yet
+    you&rsquo;ve missed out. For now you can pick up an old school railscamp
+    tee from <a href="http://railscamptee.com/">railscamptee.com</a>.
+    
+  %p See you all at <a href="http://railscamps.com/#au_may_2009">rails camp</a>!
 
 @@ home
 
