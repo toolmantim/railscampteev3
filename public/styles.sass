@@ -1,0 +1,170 @@
+html, body, div, h1, h2, p
+  margin: 0
+  padding: 0
+  font-size: 100%
+
+body
+  width: 900px
+  margin: 0 auto
+  background-color: #ff0
+  position: relative
+  font-family: Arial, sans-serif
+
+a
+  text-decoration: none
+  border-bottom: 1px solid black
+  color: black
+
+img.tee
+  position: absolute
+  top: 100px
+  left: 0
+h1.order
+  color: red
+  z-index: 4
+  position: absolute
+  top: 150px
+  left: 500px
+  font-size: 100px
+  text-transform: lowercase
+  cursor: pointer
+p.days
+  position: absolute
+  top: 260px
+  left: 720px
+  font-size: 24px
+  text-transform: lowercase
+  color: red
+.intro
+  position: absolute
+  top: 350px
+  left: 500px
+  font-size: 14px
+  width: 460px
+  line-height: 1.5em
+  p
+    margin-bottom: 10px
+
+.guy-or-gal
+  z-index: 3
+  position: absolute
+  bottom: 500px
+  left: 500px
+  *
+    position: absolute
+  h1
+    font-size: 90px
+    cursor: pointer
+  h1.gal
+    top: 0
+    left: 0
+  .or
+    top: 80px
+    left: 65px
+    font-size: 40px
+    color: red
+  h1.guy
+    top: 60px
+    left: 110px
+  .question
+    top: 100px
+    left: 285px
+    font-size: 50px
+    color: red
+
+.guy-tee-sizes, .gal-tee-sizes
+  opacity: 0
+  display: none
+  top: 130px
+  left: 400px
+  position: absolute
+  div
+    z-index: 2
+    position: absolute
+    left: 0
+    text-align: center
+    font-weight: bold
+    color: black
+    cursor: pointer
+    img
+      width: 100%
+      margin-bottom: 5px
+    &.small
+      top: 50px
+      width: 85px
+    &.medium
+      top: 43px
+      width: 106px
+    &.large
+      top: 27px
+      width: 131px
+    &.x-large
+      top: 0
+      width: 171px
+  table
+    position: absolute
+    top: 220px
+    left: 50px
+    width: 300px
+    opacity: 0.6
+    thead
+      opacity: 0.8
+    tbody
+      th
+        text-align: left
+      td
+        text-align: center
+
+.details
+  z-index: 1
+  opacity: 0
+  display: none
+  position: absolute
+  top: 150px
+  left: 400px
+  h1.name
+    font-size: 48px
+  p.description
+    font-size: 18px
+    opacity: 0.5
+  input
+    font-size: 24px
+  input.submit
+    background-color: #000
+    color: #fff
+    border: none
+
+.pay
+  z-index: 1
+  position: absolute
+  top: 170px
+  left: 600px
+  opacity: 0
+  display: none
+  h1
+    font-size: 24px
+    margin: 0
+    padding: 0
+  form
+    margin: 20px 0 0 5px
+
+.thankyou
+  position: absolute
+  top: 200px
+  left: 500px
+  h1
+    font-size: 92px
+    position: absolute
+    top: -100px
+    left: 0
+  p
+    margin-top: 10px
+
+.closed
+  position: absolute
+  top: 100px
+  left: 500px
+  h1
+    font-size: 3.2em
+  p
+    margin-top: 20px
