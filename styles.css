@@ -1,0 +1,212 @@
+html, body, div, h1, h2, p {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+body {
+  width: 900px;
+  margin: 0 auto;
+  background-color: #ff0;
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  color: black;
+}
+
+img.tee {
+  position: absolute;
+  top: 100px;
+  left: 0;
+}
+
+h1.order {
+  color: red;
+  z-index: 4;
+  position: absolute;
+  top: 150px;
+  left: 500px;
+  font-size: 100px;
+  text-transform: lowercase;
+  cursor: pointer;
+}
+
+p.days {
+  position: absolute;
+  top: 260px;
+  left: 720px;
+  font-size: 24px;
+  text-transform: lowercase;
+  color: red;
+}
+
+.intro {
+  position: absolute;
+  top: 350px;
+  left: 500px;
+  font-size: 14px;
+  width: 460px;
+  line-height: 1.5em;
+}
+.intro p {
+  margin-bottom: 10px;
+}
+
+.guy-or-gal {
+  z-index: 3;
+  position: absolute;
+  bottom: 500px;
+  left: 500px;
+}
+.guy-or-gal * {
+  position: absolute;
+}
+.guy-or-gal h1 {
+  font-size: 90px;
+  cursor: pointer;
+}
+.guy-or-gal h1.gal {
+  top: 0;
+  left: 0;
+}
+.guy-or-gal .or {
+  top: 80px;
+  left: 65px;
+  font-size: 40px;
+  color: red;
+}
+.guy-or-gal h1.guy {
+  top: 60px;
+  left: 110px;
+}
+.guy-or-gal .question {
+  top: 100px;
+  left: 285px;
+  font-size: 50px;
+  color: red;
+}
+
+.guy-tee-sizes, .gal-tee-sizes {
+  opacity: 0;
+  display: none;
+  top: 130px;
+  left: 400px;
+  position: absolute;
+}
+.guy-tee-sizes div, .gal-tee-sizes div {
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+  cursor: pointer;
+}
+.guy-tee-sizes div img, .gal-tee-sizes div img {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.guy-tee-sizes div.small, .gal-tee-sizes div.small {
+  top: 50px;
+  width: 85px;
+}
+.guy-tee-sizes div.medium, .gal-tee-sizes div.medium {
+  top: 43px;
+  width: 106px;
+}
+.guy-tee-sizes div.large, .gal-tee-sizes div.large {
+  top: 27px;
+  width: 131px;
+}
+.guy-tee-sizes div.x-large, .gal-tee-sizes div.x-large {
+  top: 0;
+  width: 171px;
+}
+.guy-tee-sizes table, .gal-tee-sizes table {
+  position: absolute;
+  top: 220px;
+  left: 50px;
+  width: 300px;
+  opacity: 0.6;
+}
+.guy-tee-sizes table thead, .gal-tee-sizes table thead {
+  opacity: 0.8;
+}
+.guy-tee-sizes table tbody th, .gal-tee-sizes table tbody th {
+  text-align: left;
+}
+.guy-tee-sizes table tbody td, .gal-tee-sizes table tbody td {
+  text-align: center;
+}
+
+.details {
+  z-index: 1;
+  opacity: 0;
+  display: none;
+  position: absolute;
+  top: 150px;
+  left: 400px;
+}
+.details h1.name {
+  font-size: 48px;
+}
+.details p.description {
+  font-size: 18px;
+  opacity: 0.5;
+}
+.details input {
+  font-size: 24px;
+}
+.details input.submit {
+  background-color: #000;
+  color: #fff;
+  border: none;
+}
+
+.pay {
+  z-index: 1;
+  position: absolute;
+  top: 170px;
+  left: 600px;
+  opacity: 0;
+  display: none;
+}
+.pay h1 {
+  font-size: 24px;
+  margin: 0;
+  padding: 0;
+}
+.pay form {
+  margin: 20px 0 0 5px;
+}
+
+.thankyou {
+  position: absolute;
+  top: 200px;
+  left: 500px;
+}
+.thankyou h1 {
+  font-size: 92px;
+  position: absolute;
+  top: -100px;
+  left: 0;
+}
+.thankyou p {
+  margin-top: 10px;
+}
+
+.closed {
+  position: absolute;
+  top: 100px;
+  left: 500px;
+}
+.closed h1 {
+  font-size: 3.2em;
+}
+.closed p {
+  margin-top: 20px;
+}
